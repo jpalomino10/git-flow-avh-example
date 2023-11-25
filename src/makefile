@@ -7,3 +7,7 @@ gffp:
 gac:
 	git add .
 	git commit -m "${M}"
+
+gfff:
+	git flow feature start HEAD
+ 
