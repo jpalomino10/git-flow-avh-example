@@ -9,5 +9,5 @@ gac:
 	git commit -m "${M}"
 
 gfff:
-	git flow feature start HEAD
+	git flow feature finish HEAD
  
