@@ -24,6 +24,6 @@ feature-finish:
 release:
 	@git checkout main
 	@git merge develop
-	@npm version v${v} 
+	@git tag -a v${v}
 	@git push --tags && git push
 	@git checkout develop
