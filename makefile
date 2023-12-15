@@ -11,8 +11,8 @@ feature-publish:
 feature-finish:
 	@git checkout develop
 	@git merge feature/${n}
-	@git push origin --delete ${n}
-	@git branch -d ${n}
+	@git push origin --delete feature/${n}
+	@git branch -d feature/${n}
 
 hotfix:
 	echo "hola"
