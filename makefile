@@ -26,5 +26,7 @@ release:
 	@git pull origin main
 	@git merge develop
 	@git tag -a v${v} -m "Release new version"
+
+deploy:
 	@git push --tags && git push
 	@git checkout develop
