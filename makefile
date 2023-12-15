@@ -23,6 +23,7 @@ feature-finish:
 
 release:
 	@git checkout main
+	@git pull origin main
 	@git merge develop
 	@git tag -a v${v} -m "Release new version"
 	@git push --tags && git push
