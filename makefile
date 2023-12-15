@@ -1,6 +1,6 @@
 all: print
 
-feature-start:
+feature:
 	@git checkout develop
 	@git pull origin develop
 	@git checkout -b feature/${n}
@@ -14,5 +14,8 @@ feature-finish:
 	@git push origin --delete feature/${n}
 	@git branch -d feature/${n}
 
-hotfix:
-	echo "hola"
+release:
+	@git checkout main
+	@git merge develop
+	@npm version v${v} 
+	@git push --tags && git push
