@@ -11,7 +11,7 @@ feature-publish:
 feature-test:
 	@git checkout staging
 	@git pull origin staging
-	@git merge feature/${n}
+	@git merge HEAD
 	@git checkout develop
 
 feature-finish:
